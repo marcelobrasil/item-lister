@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ec9f781b12.js" crossorigin="anonymous"></script>
         <title>Item Lister</title>
     </head>
@@ -12,23 +13,32 @@
                 <h1 id="header-title">Item Lister</h1>
             </div>
             <form id="searchbox">
-                    <input type="text" id="filter" placeholder="Search items...">
+                    <input type="text" id="filter" class="text-box" placeholder="Search items...">
             </form>
         </header>
-        <div class="container">
-            <div id="main">
-                <h2 class="title">Add items</h2>
-                <form id="add-items-form">
-                    <input type="text" id="item-input">
-                    <input type="submit" id="submit-button" value="Submit">
-                </form>
-                <h2 class="title">Items</h2>
-                <ul id="item-list">
-                </ul>
+        <div id="list">
+            <div id="item-adder-container">
+            <h2 class="title">Add items</h2>
+            <form id="add-items-form">
+                <input type="text" id="item-input" class="text-box">
+                <input type="submit" id="submit-button" value="Submit">
+            </form>
+            </div>
+            <div id="item-list-container">
+            <h2 class="title">Items</h2>
+            <ul id="item-list">
+            </ul>
             </div>
         </div>
-        <div>
-            <button id="github"><i class="fab fa-github-square"></i> View code on GitHub</button>
+        <div id="links">
+            <div class="link-button">
+                <div><a href="https://github.com/marcelobrasil/item-lister"><i class="fab fa-github-square"></i></a></div>
+                <div><a href="https://github.com/marcelobrasil/item-lister">View code on GitHub</a></div>
+            </div>
+            <div class="link-button">
+                <div><a href="https://github.com/marcelobrasil/item-lister"><i class="fab fa-github-square"></i></a></div>
+                <div><a href="https://marcelobrasil.github.io/">View my portfolio</a></div>
+            </div>
         </div>
     </body>
     <script type="text/javascript" src="script.js"></script>
