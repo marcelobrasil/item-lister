@@ -37,7 +37,6 @@ function addItem(e) {
 
         // Adiciona o item ao DOM e limpa o form
         itemList.appendChild(newLi);
-        newLi.parentNode.style.border = '1px solid lightgray'
         itemInput.value = "";
     };
 };
