@@ -1,15 +1,34 @@
+/* Global settings */
+
+:root {
+    --x-button-color: #E63946;
+    --text-color: #F1FAEE;
+    --background-color: #1D3557;
+    --header-color: #457B9D;
+    --submit-color: #A8DADC;
+}
+
 body {
-    margin: 0;
+    max-width: 1200px;
+    margin: auto;
     padding: 0;
-    background-color: #373F51;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font: 16px "Roboto",sans-serif;
+}
+
+h2 {
+    margin: 0 0 0.5em 0;
 }
 
 header{
+    padding-top: 2em;
+    margin-top: -2em;
     display:flex;
-    background-color: #58A4B0;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--header-color);
+    border-radius: 5px;
 }
 
 #title-container{
@@ -20,44 +39,83 @@ header{
     margin-right: 1em;
 }
 
-#header-title{
-    color: white;
+.text-box {
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: var(--text-color);
 }
 
-#main {
-    margin: 1em 2em 0 2em;
-    border: 0.5px solid lightgray;
+#list {
+    margin: 2em;
     border-radius: 5px;
+    background-color: var(--header-color);
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#item-list-container {
+    margin-top: 2em;
 }
 
 #submit-button{
-    background-color: #A9BCD0;
-    color: black;
+    background-color: var(--submit-color);
+    color: var(--background-color);
     border: 0px;
     border-radius: 5px;
     padding: 0.5em;
+    margin-left: 0.5em;
 }
 
 ul {
+    border: none;
     list-style-type: none;
-    margin: 0;
+    margin: 0.5em 0 0 0;
     padding: 0;
     border-radius: 5px;
+    color: var(--background-color);
 }
 
 li {
-    border-bottom: 1px solid lightgray;
     padding: 0.5em;
+    background-color: var(--text-color);
     display: flex;
     justify-content: space-between;
-    margin-bottom: -1px;
+    margin: 0.5em 0;
+    border-radius: 5px;
 }
 
 .x-button {
     border: 0px;
     font-weight: bold;
     border-radius: 5px;
-    background-color: red;
-    color: white;
+    background-color: var(--x-button-color);
+    color: var(--text-color);
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    margin: 2em;
+}
+
+.link-button {
+    background-color: var(--header-color);
+    color: var(--text-color);
+    padding: 10px;
+    margin-right: 1em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.fab {
+    font-size: 32px;
+}
+
+.link-button a {
+    text-decoration: none;
+    color: inherit;
 }
